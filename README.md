@@ -7,11 +7,12 @@
 以下のコマンドを実行することで、リポジトリの変更をコミット＆プッシュできます。
 
 ```sh
-docker run -e GIT_EMAIL="your-email@example.com" \
-           -e GIT_NAME="Your Name" \
-           -e COMMIT_MESSAGE="Automated update" \
-           -v /path/to/repo:/workspace \
-           your-docker-image
+docker run \
+  -e GIT_EMAIL="your-email@example.com" \
+  -e GIT_NAME="Your Name" \
+  -e COMMIT_MESSAGE="Automated update" \
+  -v /path/to/repo:/workspace \
+  your-docker-image
 ```
 
 ## 環境変数
