@@ -5,6 +5,7 @@ GIT_EMAIL="${GIT_EMAIL:-action@github.com}"
 GIT_USERNAME="${GIT_USERNAME:-GitHub Action}"
 COMMIT_MESSAGE="${COMMIT_MESSAGE:-Update files}"
 
+git config --global --add safe.directory /workspace
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_USERNAME"
 
